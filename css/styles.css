@@ -10823,17 +10823,5 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
-  /* ตั้งค่าระยะห่างด้านบนและด้านล่าง */
-  .chatgpt-search-container {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  /* กำหนดความกว้างและ padding ของช่องค้นหา */
-  .chatgpt-search-container input {
-    max-width: 400px; /* ปรับความกว้างตามที่คุณต้องการ */
-    width: 100%;
-    padding: 10px; /* ปรับ padding ตามที่ต้องการ */
-  }
-
+  
 }
