@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>สินค้าที่โพสต์ | Second-hand Product</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Second-hand Product</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">หน้าแรก</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#!">About</a></li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">สินค้า</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="All_Product.html">สินค้าทั้งหมด</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="Post_Item.html">สินค้าที่โพสต์</a></li>
+                                <li><a class="dropdown-item" href="Favorite.html">สินค้าที่ถูกใจ</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">หมวดหมู่</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="Free.html">สินค้าฟรี</a></li>
+                                <li><a class="dropdown-item" href="Free.html">หนังสือและสื่อบันเทิง</a></li>
+                                <li><a class="dropdown-item" href="Free.html">เฟอร์นิเจอร์</a></li>
+                                <li><a class="dropdown-item" href="Free.html">อุปกรณ์อิเล็กทรอนิกส์</a></li>
+                                <li><a class="dropdown-item" href="Free.html">เสื้อผ้า</a></li>
+                                <li><a class="dropdown-item" href="Free.html">อื่นๆ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Shop in Your style</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">With this Second-hand Product Shop</p>
+                </div>
+            </div>
+        
+        </header>
+        <!-- Section-->
+        <section class="py-5">
+            <form action=""  method="post" enctype="multipart/form-data" name="Add_Product" id="Add_Product" >
+
+  
+                <table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <div class="container px-4 px-lg-5 mt-5">
+                        <h2 class="fw-bolder">เพิ่มสินค้า</h2>
+                        <br>
+                        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                            
+                    </div>
+                  </tr>
+                  <tr>
+                    <td width="129" align="right" valign="middle">ชื่อสินค้า :&nbsp;</td>
+                    <td colspan="2"><label for="pro_name2"></label>
+                      <input name="pro_name" type="text" required="required" id="pro_name2" size="50"/></td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="middle">&nbsp;</td>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="middle">ประเภทสินค้า :&nbsp;</td>
+                    <td colspan="2">
+                    <label for=""></label>
+                      <select name="type_id" id="type_id" required="required">
+                        <option value="">กรุณาเลือกประเภท</option>
+                        <option value="1">สินค้าฟรี</option>
+                        <option value="2">หนังสือและสื่อบันเทิง</option>
+                        <option value="3">เฟอร์นิเจอร์</option>
+                        <option value="4">อุปกรณ์อิเล็กทรอนิกส์</option>
+                        <option value="5">เสื้อผ้า</option>
+                        <option value="6">อื่นๆ</option>
+                         
+                        </option>
+                         
+                      </select>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="middle">&nbsp;</td>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="top">รายละเอียดสินค้า :&nbsp;</td>
+                    <td colspan="2">
+                    <textarea name="pro_detail" id="pro_detail" cols="50" rows="3" required="required"></textarea></td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="middle">&nbsp;</td>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="top">รายละเอียดอื่นๆ :&nbsp;</td>
+                    <td colspan="2">
+                    <textarea name="pro_detailother" cols="50" rows="3" required="required" id="pro_detailother"></textarea></td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="middle">&nbsp;</td>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+                    <tr>
+                        <td align="right" valign="middle">ราคา :</td>
+                        <td width="190"><label for="pro_price_cost"></label>
+                        <input type="number" name="pro_price_cost" id="pro_price_cost" required="required"/></td>
+                    </tr>
+                  <tr>
+                    <td align="right" valign="middle">&nbsp;</td>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="middle">สภาพสินค้า :&nbsp;</td>
+                    <td colspan="2">
+                    <label for=""></label>
+                      <select name="type_id" id="type_id" required="required">
+                        <option value="">กรุณาระบุสภาพสินค้า</option>
+                        <option value="1">มือ 1</option>
+                        <option value="2">มือ 2 สภาพดี</option>
+                        <option value="3">มือ 2 สภาพพอใช้</option>
+                        
+                         
+                        </option>
+                         
+                      </select>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="middle">&nbsp;</td>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="middle">รูปภาพสินค้า :&nbsp;</td>
+                    <td colspan="2"><label for="pro_img"></label>
+                      <input name="pro_img" type="file" required="required" id="pro_img" size="40" /></td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="middle">&nbsp;</td>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="2"><button type="submit" name="button" id="button" value="ตกลง" class="btn btn-primary">เพิ่มสินค้า</button></td>
+                  </tr>
+                </table> 
+              </form>
+        </section>
+       
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
