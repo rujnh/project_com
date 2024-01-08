@@ -1,0 +1,22 @@
+/* สไตล์สำหรับเนื้อหาของทุกประเภท */
+.content-item {
+    display: none;
+}
+
+/* สไตล์สำหรับเนื้อหาของสี */
+.content-color {
+    background-color: #f0f8ff; /* สีพื้นหลัง */
+    padding: 10px;
+}
+
+/* สไตล์สำหรับเนื้อหาของราคา */
+.content-price {
+    background-color: #e6ffe6; /* สีพื้นหลัง */
+    padding: 10px;
+}
+
+/* สไตล์สำหรับเนื้อหาของคุณภาพ */
+.content-quality {
+    background-color: #ffe6e6; /* สีพื้นหลัง */
+    padding: 10px;
+}
