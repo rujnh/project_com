@@ -1,22 +1,57 @@
-/* สไตล์สำหรับเนื้อหาของทุกประเภท */
+/* Common styles for content items */
 .content-item {
     display: none;
 }
 
-/* สไตล์สำหรับเนื้อหาของสี */
+/* Styles for content of color */
 .content-color {
-    background-color: #f0f8ff; /* สีพื้นหลัง */
+    background-color: #f0f8ff;
     padding: 10px;
 }
 
-/* สไตล์สำหรับเนื้อหาของราคา */
+/* Styles for content of price */
 .content-price {
-    background-color: #e6ffe6; /* สีพื้นหลัง */
+    background-color: #e6ffe6;
     padding: 10px;
 }
 
-/* สไตล์สำหรับเนื้อหาของคุณภาพ */
+/* Styles for content of quality */
 .content-quality {
-    background-color: #ffe6e6; /* สีพื้นหลัง */
+    background-color: #ffe6e6;
     padding: 10px;
+}
+
+/* Custom styles for product details */
+.product-container {
+    max-width: 2000px !important;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.pro-d-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.product_meta {
+    margin-bottom: 15px;
+}
+
+.product_meta strong {
+    display: block;
+    font-weight: bold;
+}
+
+.pro-price {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.btn-round {
+    border-radius: 20px;
+    padding: 10px 20px;
 }
