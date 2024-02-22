@@ -8,3 +8,11 @@
 //     // Handle the click for ราคา
 //     console.log('Show มากไปน้อย, น้อยไปมาก');
 // });
+
+document.getElementById('addToCartBtn').addEventListener('click', function() {
+    var cartQuantity = document.getElementById('cartQuantity');
+    var currentQuantity = parseInt(cartQuantity.textContent);
+    
+    // Increment the quantity by 1
+    cartQuantity.textContent = currentQuantity + 1;
+  });

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" />
+    <style>
+        /* Custom styles for the form */
+        form {
+            margin: 0 auto; /* Center the form horizontally */
+            margin-top: 100px; /* Adjust top margin as needed */
+            max-width: 350px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-outline {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            font-size: 14px;
+        }
+
+        .form-check {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .form-check-input {
+            margin-right: 10px;
+        }
+
+        .form-check-label {
+            font-size: 14px;
+        }
+
+        .btn-block {
+            width: 100%;
+        }
+
+        .btn-floating {
+            margin: 5px;
+            border-radius: 50%;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-floating i {
+            font-size: 18px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="loginForm" action="submit_form.php" method="POST">
+        <!-- Email input -->
+        <div class="mb-3">
+            <label class="form-label" for="form2Example1">Email address</label>
+            <input type="email" id="form2Example1" class="form-control" required placeholder="name@example.com">
+            
+        </div>
+        
+        <!-- Password input -->
+        <div class="mb-3">
+            <label class="form-label" for="form2Example2">Password</label>
+            <input type="password" id="form2Example2" class="form-control" required>
+        </div>
+
+        <!-- 2 column grid layout for inline styling -->
+        <div class="row mb-4">
+            <div class="col d-flex justify-content-center">
+                <!-- Checkbox -->
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked>
+                    <label class="form-check-label" for="form2Example31"> Remember me </label>
+                </div>
+            </div>
+
+            <div class="col">
+                <!-- Simple link -->
+                <a href="forgot_password.html">Forgot password?</a>
+            </div>
+        </div>
+
+        <!-- Submit button -->
+        <input type="submit" class="btn btn-primary btn-block mb-4" value="Sign in">
+
+        <!-- Register buttons -->
+        <div class="text-center">
+            <p>Not a member? <a href="register.html">Register</a></p>
+        </div>
+    </form>
+
+    <script>
+        // Client-side form validation
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            var emailInput = document.getElementById("form2Example1");
+            var passwordInput = document.getElementById("form2Example2");
+            var isValid = true;
+
+            // Check if email is empty
+            if (!emailInput.value.trim()) {
+                isValid = false;
+                emailInput.classList.add("is-invalid");
+            } else {
+                emailInput.classList.remove("is-invalid");
+            }
+
+            // Check if password is empty
+            if (!passwordInput.value.trim()) {
+                isValid = false;
+                passwordInput.classList.add("is-invalid");
+            } else {
+                passwordInput.classList.remove("is-invalid");
+            }
+
+            // Prevent form submission if validation fails
+            if (!isValid) {
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
